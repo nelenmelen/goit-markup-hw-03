@@ -7,6 +7,17 @@
     --background: #2F303A;
     --color-logo-links: #2196F3 
    } 
+
+.html {
+    box-sizing: border-box;
+}
+
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 .web-work{
     font-family: Roboto;
      font-style: normal;
@@ -40,6 +51,14 @@
     font-size: 26px;
     line-height: 1.192;
     color: var(--main-color-headers);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    position: absolute;
+width: 145px;
+height: 31px;
+left: 215 24 1240 25;
+top: 24px;
+
   }
   .web-logo {
     font-family: Raleway;
@@ -48,8 +67,17 @@
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--color-logo-links);
-  }
+    color: var(--color-logo-links); 
+
+    
+}
+.web-link li{
+    margin-left: 50px;
+    font-weight: 500;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+}
+
 .web-nav{
     font-family: Roboto;
     font-style: normal;
@@ -57,6 +85,10 @@
     font-size: 14px;
     line-height: 1.142;
     color: var(--main-color-headers) ;
+}
+
+.web-link :last-child{
+    margin-right: 0;
 }
 .web-link{
     font-family: Roboto;
@@ -66,7 +98,10 @@
     color: var(--main-color-headers) ;
     font-weight: 500;
     letter-spacing: 0.03em;
+    display: flex;
+    
  }
+
 .web-contacts .links{
     text-decoration: none;
     font-family: Roboto;
@@ -76,21 +111,54 @@
     color: var(-main-text-color);
     line-height: 1.142;
     letter-spacing: 0.02em;
+   
+    
  }
 
 /* Герой */
+ .hero .conteiner{
+      display: flex;
+      justify-content: center;
+      background-color:#2F303A ;
+      padding-bottom: 200px;
+      padding-top: 200px;   
+      width: 1600px;
+height: 572px;
+      }
+
+
 .hero-title{
-    font-weight: 900;
-     font-size: 44px;
-     line-height: 1.363;
-     text-align: center;
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
+    position: absolute;
+width: 696px;
+height: 123.6px;
+left: 452 242.4 452 286;
+top: 286px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
      color: var(--white-color);
      background-color: #2F303A;
+     text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+    
+     /* кнопка */
 
 }
 .button-style{
+
+    
+    position: absolute;
+    width: 200px;
+    height: 51.5px;
+    left: 700 160 700 360.5;
+    top: 440.5px;
+    justify-content: center;
+
     font-weight: bold;
      font-size: 16px;
      line-height: 1.875;
@@ -98,14 +166,13 @@
      margin: auto; 
      background: var(--color-button-logo);
      color: var(--white-color);
-     display: flex;    
-     width: 200px;
-     height: 50px;
-     left: 700px;
-     top: 430px;  
+     display: flex;      
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
      border-radius: 4px;     
      border: none; 
+     
+/* особенности  */
+
 }
 .special-title{
     font-family: Roboto;
