@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/normalize.css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -11,25 +11,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="web-work">
     <!-- Шапка сайта -->
     <header>
       <div class="conteiner">
-      <nav class="web-nav">
+      <nav class="sait-nav">
         <a href="./index.html" class="logo"><span class="web-logo">Web</span>Studio</a>
         <ul class="web-link">
           <li><a href="./index.html" class="active link">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="" class="link">Контакты</a></li>
         </ul>
+        <ul class="web-contacts">
+          <li><a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link phone">+38 096 111 11 11</a></li>
+        </ul>
       </nav>
-      <ul class="web-contacts">
-        <li><a href="mailto:info@devstudio.com" class=" link mail">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class=" link phone">+38 096 111 11 11</a></li>
-      </ul>
-    </div>
+      </div>
     </header>
   <main>
       <!-- Герой -->
@@ -39,10 +40,11 @@
         <button type="button" class="button-style">Заказать услугу</button>
       </div>
       </section>
+      <!--Особенности -->
       <section class="special">
         <div class="conteiner">
         <h2 hidden>soft skills</h2>
-        <ul>
+        <ul class="special-columns">
           <li>
             <h3 class="special-title">Внимание к деталям</h3>
             <p class="special-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -66,52 +68,58 @@
         </ul>
       </div>
       </section>
+       <!-- Чем мы занимаемся -->
       <section class="our-work">
-        <!-- Чем мы занимаемся -->
-        <h2 class="title">Чем мы занимаемся</h2>
-        <ul>
+        <div class="conteiner">
+       <h2 class="title">Чем мы занимаемся</h2>
+        <ul class="box-img">
           <li><img src="./images/jpg3.jpg" alt="computer" width="370" /></li>
           <li><img src="./images/jpg2.jpg" alt="phone" width="370" /></li>
           <li><img src="./images/jpg1.jpg" alt="tablet" width="370" /></li>
         </ul>
+      </div>
       </section>
+      <!-- Наша команда -->
       <section class="team">
-        <!-- Наша команда -->
+        <div class="conteiner">
         <h2 class="our-team">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="team-list">
+          <li class="scorecard">
             <img src="./images/d.jpg" alt="photo designer" width="270" />
             <h3 class="team-members">Игорь Демьяненко</h3>
             <p class="team-text">Product Designer</p>
           </li>
-          <li>
+          <li class="scorecard">
             <img src="./images/olya.jpg" alt="photo developer" width="270" />
             <h3 class="team-members">Ольга Репина</h3>
             <p class="team-text">Frontend Developer</p>
           </li>
-          <li>
+          <li class="scorecard">
             <img src="./images/kolya.jpg" alt="photo marketing" width="270" />
             <h3 class="team-members">Николай Тарасов</h3>
             <p class="team-text">Marketing</p>
           </li>
-          <li>
+          <li class="scorecard">
             <img src="./images/misha.jpg" alt="photo ui designer" width="270" />
             <h3 class="team-members">Михаил Ермаков</h3>
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
+     <!-- Адресса -->
     <footer class="site-down">
-      <!-- Адресса -->
-      <a href="./index.html"><span class="footer-web">Web</span><span class="footer-studio">Studio</span></a>
+     <div class="conteiner">
+      <a href="./index.html" class="logo-down"><span class="footer-web">Web</span><span class="footer-studio">Studio</span></a>
       <address class="address-style">
         г. Киев, пр-т Леси Украинки, 26
-        <ul>
-          <li><a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link phone">+38 096 111 11 11</a></li>
+        <ul class="footer">
+          <li><a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
